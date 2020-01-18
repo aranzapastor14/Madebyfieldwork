@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Madebyfieldwork</title>
+    <script src="https://kit.fontawesome.com/9697e498ef.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800display=swap" rel="stylesheet">
+    <style type="text/css">
+    :root{
+        --rosa: #EBB0A8;
+        --negro: #3C3C3B;
+        --grisf: #706F6F;
+        --grism: #E1DEDA;
+        --tierra: #EFECE7;
+        --blanco: white;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
+        a{
+            text-decoration: none;
+        }
+        body{
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+        }
+        /*NAV*/
+        nav{
+            width: 100%;
+            padding: 30px 40px;
+            z-index: 1;
+            display: flex;
+            justify-content: space-between;
+            position: fixed;
+            background: var(--tierra);
+        }
+        nav h1{
+            float: left;
+            color: var(--rosa);
+            border-bottom: 1px solid var(--rosa);
+        }
+        .info{
+            padding: 5px 0 0 0;
+        }
+        .info a{
+            color: var(--negro);
+            transition: 0.3s color;
+            margin: 0 20px 0 0;
+        }
+        .info a:hover{
+            color: var(--rosa);
+        }
+        nav a, nav h1{
+            font-size: 1em;
+            font-weight: 900;
+        }
+        nav a: last-child img{
+            width: 30px;
+            height: 30px;
+        }
+        /*HEADER*/
+        header{
+            height: 300px;
+            padding: 150px 0 0 0;
+            background: var(--tierra);
+        }
+        header h2{
+            padding: 10px 40px;
+            font-size: 2em;
+            line-height: 1.1em;
+            color: var(--negro);
+        }
+        /*MAIN*/
+        section{
+            position: relative;
+        }
+        .titols{
+            position: absolute;
+            width: 100%;
+            color: var(--blanco);
+            padding: 150px 40px 0px 40px;
+        }
+        .titols h3{
+            font-size: 2.4em;
+            font-weight: 700;
+        }
+        .titols h4{
+            font-size: 2em;
+            font-weight: 300;
+        }
+        .titols h5{
+            font-size: 1em;
+            font-weight: 700;   
+        }
+        .content_img{
+            width: 100%;
+            display: flex;
+        }
+        .content_img img{
+            object-fit: cover;
+            object-position: center;
+        }
+        main section:last-child{
+            padding: 80px 0 80px 0;
+            display: flex;
+            flex-direction: column;
+        }
+        .question{
+            text-align: center;
+            font-weight: 400;
+            font-size: 1.8em;
+            margin: 0 0 2em 0;
+        }
+        .button{
+            flex: 1;
+            align-self: center;
+            border: 1px solid var(--rosa);
+            padding: 1.2em;
+            font-size: 1.2em;
+            transition: background 0.4s;
+        }
+        .button:hover{
+            background: pink;
+            border: 1px solid white;
+            color: white;
+            font-size: 1.2em;
+            
+        }
+        /*FOOTER*/
+        footer{
+            padding: 30px 40px;
+            display: flex;
+        }
+        footer div:first-child{
+           /* width: 25%;*/
+            flex-shrink: 0.35;
+            flex-grow: 0.35;
+        }
+        footer div:nth-child(2){
+            /*width:50%;*/
+            flex-shrink: 0.5;
+            flex-grow: 0.5;
+        }
+        footer menu{
+            flex-shrink: 0.25;
+            flex-grow: 0.25;
+            display: flex;
+            justify-content: flex-end;
+        }
+        footer menu a{
+            display: flex;
+            align-content: flex-end;
+        }
+        footer menu a:first-child i{
+            flex-grow: 1.7;
+        }
+        footer a i{
+            float: right;
+        }
+</style>
+</head>
+<body>
+    <nav>
+       <div class="info">
+        <a href="#"><h1>Fieldwork</h1></a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Work</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+        </div>
+        <div class="logo">
+        <a href="#"><img src="" alt=""></a>
+        </div>
+    </nav>
+    <header>
+        <h2>Fieldwork is a design and technology studio. We build brands, digital products and services centred around the people who use them.</h2>
+    </header>
+    <main>
+        <section>
+          <div class="titols">
+           <h3>Fabled</h3>
+           <h4>A storytelling platform for kids</h4>
+           <h5>View the project</h5>
+           </div>
+           <div class="content_img">
+            <img src="img/house.png" alt="">
+            </div>
+        </section>
+        <section>
+          <div class="titols">
+           <h3>Penguin Like a Woman</h3>
+           <h4>A campaign to celebrate women in literature</h4>
+           <h5>View the project</h5>
+            </div>
+            <img src="img/penguin.jpeg" alt="">
+        </section>
+        <section>
+          <div class="titols">
+           <h3>Friends of the Earth Nature Kit</h3>
+           <h4>Encouranging charity donations with a kit for nature conscious people</h4>
+           <h5>View the project</h5>
+           </div>
+           <div class="content_img">
+            <img src="img/nature.jpeg" alt="">
+            </div>
+        </section>
+        <section>
+            <h3 class="question">Want to talk to us about your brand or digital product?</h3>
+            <h4 class="button">Get in touch</h4>
+        </section>
+    </main>
+    <footer>
+        <div >
+            <h6>Find us</h6>
+            <p>Fieldwork</p>
+            <p>Colony</p>
+            <p>Jactin House</p>
+            <p>24 Hood Street</p>
+            <p>Ancoats</p>
+            <p>Manchester</p>
+            <p>M4 6WX</p>
+        </div>
+        <div >
+            <h6>Get in touch</h6>
+            <p><a href="mailto:hello@madebyfieldwork.com">hello@madebyfieldwork.com</a></p>
+        </div>
+        <menu>
+            <a href=""><i class="fab fa-github"></i></a>
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </menu>
+    </footer>
+</body>
+</html>
